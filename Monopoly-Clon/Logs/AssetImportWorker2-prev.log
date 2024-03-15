@@ -1,0 +1,611 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.13f1 (5f90a5ebde0f) revision 6262949'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'de' Physical Memory: 31534 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/lfeller/Desktop/Monopoly-Clon/Monopoly-Clon
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+55610
+Successfully changed project path to: C:/Users/lfeller/Desktop/Monopoly-Clon/Monopoly-Clon
+C:/Users/lfeller/Desktop/Monopoly-Clon/Monopoly-Clon
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8592] Host "[IP] 10.125.2.230 [Port] 0 [Flags] 2 [Guid] 3805795298 [EditorId] 3805795298 [Version] 1048832 [Id] WindowsEditor(7,IT-TNN-2023LF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8592] Host "[IP] 10.125.2.230 [Port] 0 [Flags] 2 [Guid] 3805795298 [EditorId] 3805795298 [Version] 1048832 [Id] WindowsEditor(7,IT-TNN-2023LF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 341.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/lfeller/Desktop/Monopoly-Clon/Monopoly-Clon/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon (TM) Graphics (ID=0x15e7)
+    Vendor:   ATI
+    VRAM:     15767 MB
+    Driver:   30.0.13040.5001
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.018303 seconds.
+- Loaded All Assemblies, in  0.710 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.450 seconds
+Domain Reload Profiling: 1156ms
+	BeginReloadAssembly (245ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (124ms)
+	LoadAllAssembliesAndSetupDomain (263ms)
+		LoadAssemblies (238ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (259ms)
+			TypeCache.Refresh (257ms)
+				TypeCache.ScanAssembly (227ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (451ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (337ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (209ms)
+			ProcessInitializeOnLoadMethodAttributes (88ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.236 seconds
+Refreshing native plugins compatible for Editor in 8.43 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mirror | mirror-networking.com | discord.gg/N9QVxbM
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Mirror.Welcome:OnInitializeOnLoad () (at Assets/Mirror/Editor/Welcome.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/Mirror/Editor/Welcome.cs Line: 18)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.135 seconds
+Domain Reload Profiling: 2365ms
+	BeginReloadAssembly (269ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (826ms)
+		LoadAssemblies (644ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (333ms)
+			TypeCache.Refresh (288ms)
+				TypeCache.ScanAssembly (253ms)
+			ScanForSourceGeneratedMonoScriptInfo (27ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1136ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (911ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (106ms)
+			ProcessInitializeOnLoadAttributes (731ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 9.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3641 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (61.4 KB). Loaded Objects now: 4099.
+Memory consumption went from 142.5 MB to 142.4 MB.
+Total: 11.920400 ms (FindLiveObjects: 1.042400 ms CreateObjectMapping: 0.747100 ms MarkObjects: 9.699800 ms  DeleteObjects: 0.428000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11863.684918 seconds.
+  path: Assets/Prefaps/Roratet Figur/Big Rig Variant.prefab
+  artifactKey: Guid(a79676de4176315469ea209aa2d6c6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Big Rig Variant.prefab using Guid(a79676de4176315469ea209aa2d6c6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '804cdaef2096767ebf51984299c8292f') in 0.233250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 159
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Prefaps/Roratet Figur/Tiger_001 Variant.prefab
+  artifactKey: Guid(72c68e19ae81d9740bb60ba0054976e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Tiger_001 Variant.prefab using Guid(72c68e19ae81d9740bb60ba0054976e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190f76b93ad27d264e10b8c7779911ae') in 0.070732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 233
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Prefaps/Roratet Figur/Kitty_001 Variant.prefab
+  artifactKey: Guid(9dcb3a7129ed9354c8d1d4ce32ee9510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Kitty_001 Variant.prefab using Guid(9dcb3a7129ed9354c8d1d4ce32ee9510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4cf19a28e68bc94d908eaf4ace9287') in 0.034375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 227
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Prefaps/Roratet Figur/Chicken_001 Variant.prefab
+  artifactKey: Guid(1c46858c02b26c4438f7b70f86c37163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Chicken_001 Variant.prefab using Guid(1c46858c02b26c4438f7b70f86c37163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d86e83f4ff1d0a957e083eac4334c79') in 0.045317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 191
+========================================================================
+Received Import Request.
+  Time since last request: 13.465546 seconds.
+  path: Assets/Prefaps/Roratet Figur/Big Rig Variant.prefab
+  artifactKey: Guid(a79676de4176315469ea209aa2d6c6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Big Rig Variant.prefab using Guid(a79676de4176315469ea209aa2d6c6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3646b6d07c94afb2405ff1b80ce7e3') in 0.017229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 160
+========================================================================
+Received Import Request.
+  Time since last request: 2.296453 seconds.
+  path: Assets/Prefaps/Roratet Figur/Car2 Variant.prefab
+  artifactKey: Guid(abdbdda22d26f8c45a15a0702707bb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Car2 Variant.prefab using Guid(abdbdda22d26f8c45a15a0702707bb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec6b5d05ed1e81df76361db752a01bc') in 0.011817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 73
+========================================================================
+Received Import Request.
+  Time since last request: 1.867393 seconds.
+  path: Assets/Prefaps/Roratet Figur/Car2 Variant.prefab
+  artifactKey: Guid(abdbdda22d26f8c45a15a0702707bb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Car2 Variant.prefab using Guid(abdbdda22d26f8c45a15a0702707bb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454190fa22dadd642f7a2b9248d85a44') in 0.012729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 0.919007 seconds.
+  path: Assets/Prefaps/Roratet Figur/Chicken_001 Variant.prefab
+  artifactKey: Guid(1c46858c02b26c4438f7b70f86c37163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Chicken_001 Variant.prefab using Guid(1c46858c02b26c4438f7b70f86c37163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf8ae94157c4dd113d37d9ec1ace95f') in 0.013172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 191
+========================================================================
+Received Import Request.
+  Time since last request: 1.663532 seconds.
+  path: Assets/Prefaps/Roratet Figur/Chicken_001 Variant.prefab
+  artifactKey: Guid(1c46858c02b26c4438f7b70f86c37163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Chicken_001 Variant.prefab using Guid(1c46858c02b26c4438f7b70f86c37163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea8064d8ff112663cc4851de6b04381') in 0.013405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 192
+========================================================================
+Received Import Request.
+  Time since last request: 0.884044 seconds.
+  path: Assets/Prefaps/Roratet Figur/City Bus Variant.prefab
+  artifactKey: Guid(5b85962e040f821489768428afefb6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/City Bus Variant.prefab using Guid(5b85962e040f821489768428afefb6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e37eb6d48122fdd0d6d0032007e4076') in 0.013227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 1.656098 seconds.
+  path: Assets/Prefaps/Roratet Figur/City Bus Variant.prefab
+  artifactKey: Guid(5b85962e040f821489768428afefb6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/City Bus Variant.prefab using Guid(5b85962e040f821489768428afefb6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ff552962f4030b46a4eee753cacbfa') in 0.012535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 75
+========================================================================
+Received Import Request.
+  Time since last request: 0.782278 seconds.
+  path: Assets/Prefaps/Roratet Figur/Dog_001 Variant.prefab
+  artifactKey: Guid(547c43c732bdbf34ba374d933cb58676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Dog_001 Variant.prefab using Guid(547c43c732bdbf34ba374d933cb58676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291655a904a5dcff56dd378a8b7fc691') in 0.014355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 239
+========================================================================
+Received Import Request.
+  Time since last request: 1.435185 seconds.
+  path: Assets/Prefaps/Roratet Figur/Dog_001 Variant.prefab
+  artifactKey: Guid(547c43c732bdbf34ba374d933cb58676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Dog_001 Variant.prefab using Guid(547c43c732bdbf34ba374d933cb58676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38fefc1d5d791e21f84d42eeb5a8bfd0') in 0.013572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 240
+========================================================================
+Received Import Request.
+  Time since last request: 0.712661 seconds.
+  path: Assets/Prefaps/Roratet Figur/Horse_001 Variant.prefab
+  artifactKey: Guid(523c3f622549a014a85dfd15ecf9c95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Horse_001 Variant.prefab using Guid(523c3f622549a014a85dfd15ecf9c95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cda5e53047e05e8f53b1decdad05aab') in 0.014075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 245
+========================================================================
+Received Import Request.
+  Time since last request: 1.442697 seconds.
+  path: Assets/Prefaps/Roratet Figur/Horse_001 Variant.prefab
+  artifactKey: Guid(523c3f622549a014a85dfd15ecf9c95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Horse_001 Variant.prefab using Guid(523c3f622549a014a85dfd15ecf9c95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645ea6b3987b712957d37e88d97e1d01') in 0.014223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 246
+========================================================================
+Received Import Request.
+  Time since last request: 0.981560 seconds.
+  path: Assets/Prefaps/Roratet Figur/JetskiV1 Variant.prefab
+  artifactKey: Guid(15c6841c4d247b54aaeea95604a23d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/JetskiV1 Variant.prefab using Guid(15c6841c4d247b54aaeea95604a23d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c619b6add31f4379a485589267d46c67') in 0.011718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 2.669948 seconds.
+  path: Assets/Prefaps/Roratet Figur/JetskiV1 Variant.prefab
+  artifactKey: Guid(15c6841c4d247b54aaeea95604a23d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/JetskiV1 Variant.prefab using Guid(15c6841c4d247b54aaeea95604a23d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8837f80dfa25c3fa76ba0f5df3ded529') in 0.014274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.750985 seconds.
+  path: Assets/Prefaps/Roratet Figur/Kitty_001 Variant.prefab
+  artifactKey: Guid(9dcb3a7129ed9354c8d1d4ce32ee9510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Kitty_001 Variant.prefab using Guid(9dcb3a7129ed9354c8d1d4ce32ee9510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28dfa6407a0ca57a81243f3a442cdba5') in 0.014108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 227
+========================================================================
+Received Import Request.
+  Time since last request: 1.456727 seconds.
+  path: Assets/Prefaps/Roratet Figur/Kitty_001 Variant.prefab
+  artifactKey: Guid(9dcb3a7129ed9354c8d1d4ce32ee9510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Kitty_001 Variant.prefab using Guid(9dcb3a7129ed9354c8d1d4ce32ee9510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebf9e0bc8b0029b646b09b97453ff7e') in 0.012597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 228
+========================================================================
+Received Import Request.
+  Time since last request: 0.836129 seconds.
+  path: Assets/Prefaps/Roratet Figur/Pinguin_001 Variant.prefab
+  artifactKey: Guid(a9bc1a3ee008e85489758f4594ca8c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Pinguin_001 Variant.prefab using Guid(a9bc1a3ee008e85489758f4594ca8c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929ac17ba7e41e28840dec78e6bb4a25') in 0.012963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 155
+========================================================================
+Received Import Request.
+  Time since last request: 1.227751 seconds.
+  path: Assets/Prefaps/Roratet Figur/Pinguin_001 Variant.prefab
+  artifactKey: Guid(a9bc1a3ee008e85489758f4594ca8c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Pinguin_001 Variant.prefab using Guid(a9bc1a3ee008e85489758f4594ca8c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04e585170b438e19cb6abe456304549') in 0.012641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 156
+========================================================================
+Received Import Request.
+  Time since last request: 0.692974 seconds.
+  path: Assets/Prefaps/Roratet Figur/Police Car Variant.prefab
+  artifactKey: Guid(53aa3109d71af2040b3cca49a93d84c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Police Car Variant.prefab using Guid(53aa3109d71af2040b3cca49a93d84c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef04cd3723b0616eb50082b9af298d9') in 0.012900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 73
+========================================================================
+Received Import Request.
+  Time since last request: 1.547532 seconds.
+  path: Assets/Prefaps/Roratet Figur/Police Car Variant.prefab
+  artifactKey: Guid(53aa3109d71af2040b3cca49a93d84c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Police Car Variant.prefab using Guid(53aa3109d71af2040b3cca49a93d84c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7ab2efa219a94e6e1a60433c0f7cc4') in 0.011709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 0.679838 seconds.
+  path: Assets/Prefaps/Roratet Figur/Scout_Boat Variant.prefab
+  artifactKey: Guid(b5445cc6c6736c1419dc2c7122cb6524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Scout_Boat Variant.prefab using Guid(b5445cc6c6736c1419dc2c7122cb6524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7520e9747d96d5be6390e562e0181a77') in 0.011556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 2.268895 seconds.
+  path: Assets/Prefaps/Roratet Figur/Scout_Boat Variant.prefab
+  artifactKey: Guid(b5445cc6c6736c1419dc2c7122cb6524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Scout_Boat Variant.prefab using Guid(b5445cc6c6736c1419dc2c7122cb6524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1daa9c07fa23df98f22cd3ad6050a7d4') in 0.012754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.624213 seconds.
+  path: Assets/Prefaps/Roratet Figur/Taxi Variant.prefab
+  artifactKey: Guid(5509c7e8785dc7a439583977563d29e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Taxi Variant.prefab using Guid(5509c7e8785dc7a439583977563d29e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f312e7dacf52a4752f8332803ba8115') in 0.015383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 73
+========================================================================
+Received Import Request.
+  Time since last request: 1.492763 seconds.
+  path: Assets/Prefaps/Roratet Figur/Taxi Variant.prefab
+  artifactKey: Guid(5509c7e8785dc7a439583977563d29e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Taxi Variant.prefab using Guid(5509c7e8785dc7a439583977563d29e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c484b0721707c17e89762c10a07439c') in 0.012247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 0.896158 seconds.
+  path: Assets/Prefaps/Roratet Figur/Tiger_001 Variant.prefab
+  artifactKey: Guid(72c68e19ae81d9740bb60ba0054976e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Tiger_001 Variant.prefab using Guid(72c68e19ae81d9740bb60ba0054976e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c94db3f404022a6e6d2ab2cebe2ff97a') in 0.014284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 233
+========================================================================
+Received Import Request.
+  Time since last request: 1.527932 seconds.
+  path: Assets/Prefaps/Roratet Figur/Tiger_001 Variant.prefab
+  artifactKey: Guid(72c68e19ae81d9740bb60ba0054976e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Tiger_001 Variant.prefab using Guid(72c68e19ae81d9740bb60ba0054976e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d939f3448a05ed3a516f9c9d867281') in 0.013799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 234
+========================================================================
+Received Import Request.
+  Time since last request: 29.737396 seconds.
+  path: Assets/Prefaps/Roratet Figur/Big Rig Variant.prefab
+  artifactKey: Guid(a79676de4176315469ea209aa2d6c6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Big Rig Variant.prefab using Guid(a79676de4176315469ea209aa2d6c6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e14d0fe8b6a13717c9300e4131a739') in 0.016390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 160
+========================================================================
+Received Import Request.
+  Time since last request: 2.796223 seconds.
+  path: Assets/Prefaps/Roratet Figur/Car2 Variant.prefab
+  artifactKey: Guid(abdbdda22d26f8c45a15a0702707bb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Car2 Variant.prefab using Guid(abdbdda22d26f8c45a15a0702707bb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8020add77418d6f0acf4217e45c7244e') in 0.016224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 2.489182 seconds.
+  path: Assets/Prefaps/Roratet Figur/Chicken_001 Variant.prefab
+  artifactKey: Guid(1c46858c02b26c4438f7b70f86c37163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Chicken_001 Variant.prefab using Guid(1c46858c02b26c4438f7b70f86c37163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384adb04f0cb5f6251bbc05a91385268') in 0.015439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 192
+========================================================================
+Received Import Request.
+  Time since last request: 2.304681 seconds.
+  path: Assets/Prefaps/Roratet Figur/City Bus Variant.prefab
+  artifactKey: Guid(5b85962e040f821489768428afefb6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/City Bus Variant.prefab using Guid(5b85962e040f821489768428afefb6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba414cfb650b3784b9010f42f81643e') in 0.016270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 75
+========================================================================
+Received Import Request.
+  Time since last request: 2.051813 seconds.
+  path: Assets/Prefaps/Roratet Figur/Dog_001 Variant.prefab
+  artifactKey: Guid(547c43c732bdbf34ba374d933cb58676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Dog_001 Variant.prefab using Guid(547c43c732bdbf34ba374d933cb58676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71d503434f7d56dabfac17c35439de1') in 0.017948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 240
+========================================================================
+Received Import Request.
+  Time since last request: 1.980804 seconds.
+  path: Assets/Prefaps/Roratet Figur/Horse_001 Variant.prefab
+  artifactKey: Guid(523c3f622549a014a85dfd15ecf9c95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Horse_001 Variant.prefab using Guid(523c3f622549a014a85dfd15ecf9c95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbaec7355361ca661fa9c2bbe2fcf21f') in 0.015913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 246
+========================================================================
+Received Import Request.
+  Time since last request: 3.645551 seconds.
+  path: Assets/Prefaps/Roratet Figur/JetskiV1 Variant.prefab
+  artifactKey: Guid(15c6841c4d247b54aaeea95604a23d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/JetskiV1 Variant.prefab using Guid(15c6841c4d247b54aaeea95604a23d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86aa54b715c03f18897f3b5cba24d448') in 0.012793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 2.416796 seconds.
+  path: Assets/Prefaps/Roratet Figur/Kitty_001 Variant.prefab
+  artifactKey: Guid(9dcb3a7129ed9354c8d1d4ce32ee9510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Kitty_001 Variant.prefab using Guid(9dcb3a7129ed9354c8d1d4ce32ee9510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44201b4101e0ff1a0be9ff615807a17') in 0.015473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 228
+========================================================================
+Received Import Request.
+  Time since last request: 5.755085 seconds.
+  path: Assets/Prefaps/Roratet Figur/Pinguin_001 Variant.prefab
+  artifactKey: Guid(a9bc1a3ee008e85489758f4594ca8c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Pinguin_001 Variant.prefab using Guid(a9bc1a3ee008e85489758f4594ca8c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f1762774e6db46a4429051973bcca1') in 0.014941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 156
+========================================================================
+Received Import Request.
+  Time since last request: 2.429222 seconds.
+  path: Assets/Prefaps/Roratet Figur/Police Car Variant.prefab
+  artifactKey: Guid(53aa3109d71af2040b3cca49a93d84c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Police Car Variant.prefab using Guid(53aa3109d71af2040b3cca49a93d84c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09ed46cbfa6e735afb9a90729bb4ea2') in 0.014780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 2.749476 seconds.
+  path: Assets/Prefaps/Roratet Figur/Scout_Boat Variant.prefab
+  artifactKey: Guid(b5445cc6c6736c1419dc2c7122cb6524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Scout_Boat Variant.prefab using Guid(b5445cc6c6736c1419dc2c7122cb6524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961e6a3337d1ad6160e973a3bbbd68dc') in 0.013257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 2.336505 seconds.
+  path: Assets/Prefaps/Roratet Figur/Taxi Variant.prefab
+  artifactKey: Guid(5509c7e8785dc7a439583977563d29e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Taxi Variant.prefab using Guid(5509c7e8785dc7a439583977563d29e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fedef4749b1d0cc756cf0738a57bb5a') in 0.015465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 2.318690 seconds.
+  path: Assets/Prefaps/Roratet Figur/Tiger_001 Variant.prefab
+  artifactKey: Guid(72c68e19ae81d9740bb60ba0054976e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefaps/Roratet Figur/Tiger_001 Variant.prefab using Guid(72c68e19ae81d9740bb60ba0054976e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8470c4ed7b3fbc70afda0a7e491eb2') in 0.015065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 234
+========================================================================
+Received Import Request.
+  Time since last request: 98.240534 seconds.
+  path: Assets/Scripts/Spawn_Figure.cs
+  artifactKey: Guid(378c337bdb7995a45bcf55c1da072c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Spawn_Figure.cs using Guid(378c337bdb7995a45bcf55c1da072c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5b7c8c04f77782583d1538cfa45e53') in 0.000911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 167.696755 seconds.
+  path: Assets/Scenes/Singel Auswahl Menu.unity
+  artifactKey: Guid(16072d3218e02f64a94f42b1ce06e2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Singel Auswahl Menu.unity using Guid(16072d3218e02f64a94f42b1ce06e2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09616cb2878eb46bb5be3f28b93585a3') in 0.000622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.647 seconds
+Refreshing native plugins compatible for Editor in 7.36 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.208 seconds
+Domain Reload Profiling: 1846ms
+	BeginReloadAssembly (186ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (343ms)
+		LoadAssemblies (405ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1208ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (523ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (408ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 5.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3618 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (36.3 KB). Loaded Objects now: 4111.
+Memory consumption went from 145.5 MB to 145.5 MB.
+Total: 3.980000 ms (FindLiveObjects: 0.336800 ms CreateObjectMapping: 0.238500 ms MarkObjects: 3.338900 ms  DeleteObjects: 0.064600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

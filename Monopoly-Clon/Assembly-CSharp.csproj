@@ -1097,6 +1097,10 @@
       <Project>{1AB2B975-8E5C-ADED-4ACA-84B4AA369605}</Project>
       <Name>Mirror.Transports</Name>
     </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{E6DFE7A5-BD31-8286-25E8-BB128537609D}</Project>
+      <Name>ParrelSync</Name>
+    </ProjectReference>
     <ProjectReference Include="Mirror.Components.csproj">
       <Project>{05D3DCA8-1CED-3129-F17F-D613B67543E5}</Project>
       <Name>Mirror.Components</Name>
