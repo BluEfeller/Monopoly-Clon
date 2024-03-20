@@ -15,7 +15,7 @@ public class StartMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Start_Menu.SetActive(true);
+        Start_Menu.SetActive(false);
         Options.SetActive(false);
     }
 
@@ -24,7 +24,6 @@ public class StartMenu : MonoBehaviour
     {
         
     }
-
     public void Chanche_to_Options()
     {
         Start_Menu.SetActive(false);
