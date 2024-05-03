@@ -1,12 +1,12 @@
-using Mirror;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Movment : NetworkBehaviour
+public class Movment : Behaviour
 {
-    [SyncVar(hook = nameof(HolaChanged))]
+    /*[SyncVar(hook = nameof(HolaChanged))]
     public int holaCount = 0;
 
 
@@ -86,5 +86,5 @@ public class Movment : NetworkBehaviour
 
         holaCount = newCount;
         Debug.Log($"Set Hola Counter to {holaCount}");
-    }
+    }*/
 }

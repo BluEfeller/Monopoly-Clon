@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1182504390877334464}
   - component: {fileID: 4003117549188661002}
   - component: {fileID: 6521665370918471702}
-  - component: {fileID: -8219148233766318926}
   m_Layer: 0
   m_Name: Scout_Boat
   m_TagString: Untagged
@@ -28,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3210242191295913695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.40923113, z: -0, w: 0.9124308}
+  m_LocalPosition: {x: -0.0641551, y: 0.7543, z: 0.20359534}
+  m_LocalScale: {x: 0.551794, y: 0.551794, z: 0.551794}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 48.313, z: 0}
 --- !u!33 &1182504390877334464
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -107,20 +106,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3811911705681396582, guid: 9b7cc2e501ae9c546b416e06ed63191b, type: 3}
---- !u!114 &-8219148233766318926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3210242191295913695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 0
-  _assetId: 725260158
-  serverOnly: 0
-  visibility: 0
-  hasSpawned: 0

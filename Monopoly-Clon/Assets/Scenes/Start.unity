@@ -1709,37 +1709,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565158510}
   m_CullTransparentMesh: 1
---- !u!1 &1775458540
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1775458541}
-  m_Layer: 0
-  m_Name: GameField
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1775458541
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775458540}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.87, y: 0.28, z: 5.11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1775597607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,137 +1975,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782183735}
   m_CullTransparentMesh: 1
---- !u!1 &1902047757
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1902047761}
-  - component: {fileID: 1902047760}
-  - component: {fileID: 1902047759}
-  - component: {fileID: 1902047758}
-  m_Layer: 0
-  m_Name: NetworkManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1902047758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902047757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0
---- !u!114 &1902047759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902047757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7424c1070fad4ba2a7a96b02fbeb4bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  port: 7777
-  NoDelay: 1
-  SendTimeout: 5000
-  ReceiveTimeout: 30000
-  serverMaxMessageSize: 16384
-  serverMaxReceivesPerTick: 10000
-  serverSendQueueLimitPerConnection: 10000
-  serverReceiveQueueLimitPerConnection: 10000
-  clientMaxMessageSize: 16384
-  clientMaxReceivesPerTick: 1000
-  clientSendQueueLimit: 10000
-  clientReceiveQueueLimit: 10000
---- !u!114 &1902047760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902047757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81ec0d33ed36a304aa189dcf3c06a5ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 1
-  runInBackground: 1
-  headlessStartMode: 1
-  editorAutoStart: 0
-  sendRate: 60
-  autoStartServerBuild: 0
-  autoConnectClientBuild: 0
-  offlineScene: 
-  onlineScene: 
-  transport: {fileID: 0}
-  networkAddress: localhost
-  maxConnections: 100
-  disconnectInactiveConnections: 0
-  disconnectInactiveTimeout: 60
-  authenticator: {fileID: 0}
-  playerPrefab: {fileID: 2868458036091845897, guid: 17acf0aa61b48bd4c99067a120cd1258, type: 3}
-  autoCreatePlayer: 1
-  playerSpawnMethod: 0
-  spawnPrefabs:
-  - {fileID: 2222257924707951025, guid: a79676de4176315469ea209aa2d6c6a1, type: 3}
-  - {fileID: 5435291248790032722, guid: abdbdda22d26f8c45a15a0702707bb6e, type: 3}
-  - {fileID: 6389755451122934192, guid: 1c46858c02b26c4438f7b70f86c37163, type: 3}
-  - {fileID: 8203378058281736478, guid: 5b85962e040f821489768428afefb6bc, type: 3}
-  - {fileID: 8017870652192682753, guid: 547c43c732bdbf34ba374d933cb58676, type: 3}
-  - {fileID: 7833324942604594216, guid: 523c3f622549a014a85dfd15ecf9c95f, type: 3}
-  - {fileID: 8757340180334468851, guid: 15c6841c4d247b54aaeea95604a23d96, type: 3}
-  - {fileID: 3219752400829994636, guid: 9dcb3a7129ed9354c8d1d4ce32ee9510, type: 3}
-  - {fileID: 1762780557769694134, guid: a9bc1a3ee008e85489758f4594ca8c66, type: 3}
-  - {fileID: 1231532573169288423, guid: 53aa3109d71af2040b3cca49a93d84c6, type: 3}
-  - {fileID: 3656652652828696989, guid: b5445cc6c6736c1419dc2c7122cb6524, type: 3}
-  - {fileID: 2973337382776787331, guid: 5509c7e8785dc7a439583977563d29e0, type: 3}
-  - {fileID: 4928361474964437838, guid: 72c68e19ae81d9740bb60ba0054976e9, type: 3}
-  exceptionsDisconnect: 1
-  snapshotSettings:
-    bufferTimeMultiplier: 2
-    bufferLimit: 32
-    catchupNegativeThreshold: -1
-    catchupPositiveThreshold: 1
-    catchupSpeed: 0.019999999552965164
-    slowdownSpeed: 0.03999999910593033
-    driftEmaDuration: 1
-    dynamicAdjustment: 1
-    dynamicAdjustmentTolerance: 1
-    deliveryTimeEmaDuration: 2
-  evaluationMethod: 0
-  evaluationInterval: 3
-  timeInterpolationGui: 0
---- !u!4 &1902047761
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902047757}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -543.866, y: 516.92004, z: -240.68147}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1933533001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,6 +2019,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce79b7c6626b35f49b65a368ae573a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Figur:
+  - {fileID: 1123273381722132, guid: 496623da34c4d5f4ba1f1a09c613470d, type: 3}
+  - {fileID: 1987477988914766, guid: f649246b1f5e3b543802698ac92f2c01, type: 3}
+  - {fileID: 1793499937985081026, guid: c20146dc4281b894986368bba24eace9, type: 3}
+  - {fileID: 1088083314195414, guid: 262f24785dbf78249a17d0e7426169cb, type: 3}
+  - {fileID: 6036331658564139559, guid: 092b51ae408f54e408d12f9963b1c73a, type: 3}
+  - {fileID: 7983073504308677812, guid: a6dfa132460a099459cad17a47ce0535, type: 3}
+  - {fileID: 5479860217832420924, guid: 97865c8e1fc3d3d4ba0f3794412569dd, type: 3}
+  - {fileID: 3862829661469340043, guid: 1fa278ce08f2c2d44a5b87b3a3c4f47e, type: 3}
+  - {fileID: 7904713484118923825, guid: c1656e5303ea70041a0e1e6c11e3a530, type: 3}
+  - {fileID: 1760531803293426, guid: a00d2f78f7bcdd141bbe25a364c07ef4, type: 3}
+  - {fileID: 3210242191295913695, guid: b5498ca72fd4e0b409c1cde601bbe7d1, type: 3}
+  - {fileID: 1477075205395052, guid: c6635d40527faac4baaa323b2b9fda54, type: 3}
+  - {fileID: 6067091920609783031, guid: e2cb0e5fb11f4b74a8471d6c08241d22, type: 3}
+  Figur_Namen:
+  - Big Rig(Clone)
+  - Car2(Clone)
+  - Chicken_001(Clone)
+  - City Bus(Clone)
+  - Dog_001(Clone)
+  - Horse_001(Clone)
+  - JetskiV1(Clone)
+  - Kitty_001(Clone)
+  - Pinguin_001(Clone)
+  - Police Car(Clone)
+  - Scout_Boat(Clone)
+  - Taxi(Clone)
+  - Tiger_001(Clone)
 --- !u!4 &1933533004
 Transform:
   m_ObjectHideFlags: 0
@@ -2577,6 +2443,4 @@ SceneRoots:
   - {fileID: 1933533004}
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 1775458541}
   - {fileID: 1118653435}
-  - {fileID: 1902047761}
