@@ -1,15 +1,18 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Erreignis_Karten
     - GameManager
+    - Gemeinschafts_Karten
+    - Main_Gamepart
+    - PLayer_Movement
     - Rotate_Player_Auswahl_Figur
     - Spawn_Figure
     - StartMenu
     - Start_Manager
-    ParrelSync.dll:
-    - ParrelSync.ClonesManagerWindow
-    Unity.PlasticSCM.Editor.dll:
-    - Unity.PlasticSCM.Editor.PlasticWindow
+    - "Stra\xDFen_Interraktion"
+    - Watt_for_Field
+    - "W\xFCrfeln"
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -26,12 +29,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -45,6 +42,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
@@ -147,6 +145,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Spawn_Figure
     methodName: Next_Spawn_Figur_1
+  - assembly: Assembly-CSharp
+    fullTypeName: Main_Gamepart
+    methodName: Next_Player
+  - assembly: Assembly-CSharp
+    fullTypeName: Gemeinschafts_Karten
+    methodName: Select_Gemeinschafts
+  - assembly: Assembly-CSharp
+    fullTypeName: "W\xFCrfeln"
+    methodName: Roll_the_Dice
   sceneClasses:
     Assets/Scenes/Singel Auswahl Menu.unity:
     - Class: 1
@@ -194,25 +201,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4090}
     - Class: 114
-      Script: {instanceID: 4882}
+      Script: {instanceID: 4886}
     - Class: 114
-      Script: {instanceID: 4944}
+      Script: {instanceID: 4948}
     - Class: 114
-      Script: {instanceID: 5066}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 5468}
+      Script: {instanceID: 5476}
     - Class: 114
-      Script: {instanceID: 5616}
+      Script: {instanceID: 5624}
     - Class: 114
-      Script: {instanceID: 5768}
+      Script: {instanceID: 5778}
     - Class: 114
-      Script: {instanceID: 6088}
+      Script: {instanceID: 6100}
     - Class: 114
-      Script: {instanceID: 6096}
+      Script: {instanceID: 6108}
     - Class: 114
-      Script: {instanceID: 6666}
+      Script: {instanceID: 6680}
     - Class: 114
-      Script: {instanceID: 7140}
+      Script: {instanceID: 7156}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -263,16 +270,50 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1608}
     - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
       Script: {instanceID: 2612}
+    - Class: 114
+      Script: {instanceID: 2618}
     - Class: 114
       Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 5030}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 5616}
+      Script: {instanceID: 3872}
     - Class: 114
-      Script: {instanceID: 6088}
+      Script: {instanceID: 4462}
+    - Class: 114
+      Script: {instanceID: 4948}
+    - Class: 114
+      Script: {instanceID: 5034}
+    - Class: 114
+      Script: {instanceID: 5070}
+    - Class: 114
+      Script: {instanceID: 5166}
+    - Class: 114
+      Script: {instanceID: 5338}
+    - Class: 114
+      Script: {instanceID: 5624}
+    - Class: 114
+      Script: {instanceID: 5672}
+    - Class: 114
+      Script: {instanceID: 5778}
+    - Class: 114
+      Script: {instanceID: 5814}
+    - Class: 114
+      Script: {instanceID: 6100}
+    - Class: 114
+      Script: {instanceID: 6108}
+    - Class: 114
+      Script: {instanceID: 6386}
+    - Class: 114
+      Script: {instanceID: 6724}
+    - Class: 114
+      Script: {instanceID: 7156}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -281,6 +322,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -330,15 +373,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 5066}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 5616}
+      Script: {instanceID: 5624}
     - Class: 114
-      Script: {instanceID: 5768}
+      Script: {instanceID: 5778}
     - Class: 114
-      Script: {instanceID: 6088}
+      Script: {instanceID: 6100}
     - Class: 114
-      Script: {instanceID: 7230}
+      Script: {instanceID: 7246}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -852,6 +895,12 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Erreignis_Karten
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TextConsoleSimulator
   - hash:
@@ -866,6 +915,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerClickMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: bc6442be263d4d45b6dbcf6a31d2eaa5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Hypoteken
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1008,6 +1063,12 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PLayer_Movement
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
     namespaceName: TMPro
     className: TMP_DigitValidator
   - hash:
@@ -1042,6 +1103,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 279eecbd6c569c158bf28b18725acd20
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Gemeinschafts_Karten
+  - hash:
+      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -1073,6 +1140,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: "Stra\xDFen_Interraktion"
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: AnimatorMessageListener
@@ -1088,6 +1161,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 391ac93ae28449401abef3a927a56773
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Main_Gamepart
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1160,6 +1239,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TMP_FrameRateCounter
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: "W\xFCrfeln"
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1244,6 +1329,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Watt_for_Field
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1352,6 +1443,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Hauser_Bau
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
