@@ -14,4 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpielBrett.unity
     guid: 7960cd6cd4731e64f8e8d3c8e31b9cd9
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 3391f64b6d5ecdf469c07830bc038813, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7ef335a66d5bc87429bb26bec5ebfb72, type: 2}

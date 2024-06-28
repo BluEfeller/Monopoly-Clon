@@ -159,6 +159,8 @@ public class Main_Gamepart : MonoBehaviour
             GameManager.Straßen_Karten[i] = Straßen_Karten[i];
             GameManager.Straßen_Karten[i].SetActive(false);
             GameManager.Freie_Straßen[i] = -1;
+            GameManager.Straßen_Hypoteken[0, i] = Preis_Hypoteken[i];
+            GameManager.Straßen_Hypoteken[1, i] = Preis_Auflösung_Hypoteken[i];
         }
         for (int i = 0; i <= 15; i++)
         {

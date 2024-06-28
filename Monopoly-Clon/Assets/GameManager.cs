@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public static int[] Straﬂen_Kaufpreise = new int[40];
     public static GameObject[] Straﬂen_Karten = new GameObject[40];
     public static int[,] Straﬂen_Hypoteken = new int[2, 40];
+    public static int[] Offene_Hypoteken = new int[40];
     public static int[] Freie_Straﬂen = new int[40];
     public static GameObject[,] Player_Straﬂen_Besitz_Anzeige = new GameObject[4, 40];
     public static int[] Haus_Stufe = new int[40];
