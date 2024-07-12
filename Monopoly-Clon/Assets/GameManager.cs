@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
 
     public static int Würfel_Versuch = 0;
     public static int Next = 0;
+    public static int Current_Sceen = 0;
 
 
 

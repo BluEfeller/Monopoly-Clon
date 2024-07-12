@@ -125,6 +125,8 @@ public class Main_Gamepart : MonoBehaviour
     [SerializeField]
     private int[] Reno_Kosten;
 
+    [SerializeField]
+    private GameObject inv_Screen_Window;
 
 
 
@@ -212,6 +214,7 @@ public class Main_Gamepart : MonoBehaviour
                 }
             }
         }
+        inv_Screen_Window.SetActive(false);
         Ready();
     }
     public void Ready()
@@ -265,5 +268,16 @@ public class Main_Gamepart : MonoBehaviour
     public void Bot_Roll()
     {
         GameObject.Find("Würfeln").GetComponent<Würfeln>().Roll_the_Dice();
+    }
+
+    public void Open_Inv_Screen()
+    {
+        inv_Screen_Window.SetActive(true);
+        GameManager.Current_Sceen = 1;
+        GameObject.Find("Straßen_Inv_Screen").GetComponent<Street_inv>().Oben_inv_Sceen();
+    }
+    public void Close_Inv_Screen()
+    {
+        inv_Screen_Window.SetActive(false);
     }
 }
