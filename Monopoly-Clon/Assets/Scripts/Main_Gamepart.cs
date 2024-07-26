@@ -128,6 +128,11 @@ public class Main_Gamepart : MonoBehaviour
     [SerializeField]
     private GameObject inv_Screen_Window;
 
+    [SerializeField]
+    private GameObject Trade_Hub_Window;
+
+    [SerializeField]
+    private GameObject[] Player_Maker;
 
 
     private void Start()
@@ -140,7 +145,6 @@ public class Main_Gamepart : MonoBehaviour
             z = z / ii;
             ii = ii - 1;
         }
-        Debug.Log(z);
         for (int i = 0; i <= 3; i++)
         {
             GameManager.Gef‰ngnis[i] = 0;
@@ -183,6 +187,7 @@ public class Main_Gamepart : MonoBehaviour
             GameManager.Haus_Stufen_Mietpreise[3, i] = Haus_3[i];
             GameManager.Haus_Stufen_Mietpreise[4, i] = Haus_4[i];
             GameManager.Haus_Stufen_Mietpreise[5, i] = Hotel[i];
+            GameManager.Haus_Kaufpreis[i] = Preis_Hauser[i];
             GameManager.Haus_Stufe[i] = 0;
         }
         for (int i = 0; i < 4; i++)
@@ -214,7 +219,32 @@ public class Main_Gamepart : MonoBehaviour
                 }
             }
         }
+        GameObject.Find("Trade_Hub").SetActive(false);
         inv_Screen_Window.SetActive(false);
+        if (GameManager.Player_Arten[0] == 1 || GameManager.Player_Arten[0] == 2)
+        {
+            Player_Maker[1].SetActive(false);
+            Player_Maker[2].SetActive(false);
+            Player_Maker[3].SetActive(false);
+        }
+        else if (GameManager.Player_Arten[1] == 1 || GameManager.Player_Arten[1] == 2)
+        {
+            Player_Maker[0].SetActive(false);
+            Player_Maker[2].SetActive(false);
+            Player_Maker[3].SetActive(false);
+        }
+        else if (GameManager.Player_Arten[2] == 1 || GameManager.Player_Arten[2] == 2)
+        {
+            Player_Maker[0].SetActive(false);
+            Player_Maker[1].SetActive(false);
+            Player_Maker[3].SetActive(false);
+        }
+        else if (GameManager.Player_Arten[3] == 1 || GameManager.Player_Arten[3] == 2)
+        {
+            Player_Maker[0].SetActive(false);
+            Player_Maker[1].SetActive(false);
+            Player_Maker[2].SetActive(false);
+        }
         Ready();
     }
     public void Ready()
@@ -241,7 +271,7 @@ public class Main_Gamepart : MonoBehaviour
 
     public void Next_Player()
     {
-
+        GameObject.Find("Straﬂen_In").GetComponent<Straﬂen_Interraktion>().Hide_Kaufbutton();
         for (int i = 0; i <= 39; i++)
         {
             GameManager.Straﬂen_Karten[i].SetActive(false);
@@ -254,9 +284,11 @@ public class Main_Gamepart : MonoBehaviour
         {
             GameManager.Erreignis_Karten[i].SetActive(false);
         }
+        Player_Maker[GameManager.Next].SetActive(false);
         GameManager.W¸rfel_Versuch = 0;
         GameManager.Next ++;
         GameManager.Next = GameManager.Next % 4;
+        Player_Maker[GameManager.Next].SetActive(true);
 
         if (GameManager.Player_Arten[GameManager.Next] == 1)
         {
@@ -274,10 +306,21 @@ public class Main_Gamepart : MonoBehaviour
     {
         inv_Screen_Window.SetActive(true);
         GameManager.Current_Sceen = 1;
-        GameObject.Find("Straﬂen_Inv_Screen").GetComponent<Street_inv>().Oben_inv_Sceen();
+        GameObject.Find("Straﬂen_Inv_Screen").GetComponent<Street_inv>().Neuer_Berreich();
     }
     public void Close_Inv_Screen()
     {
         inv_Screen_Window.SetActive(false);
+        GameManager.Current_Sceen = 6;
+    }
+
+    public void Open_Trade_HUB()
+    {
+        Trade_Hub_Window.SetActive(true);
+        GameObject.Find("Trade_Hub").GetComponent<Trade_HUB>().Handel_Start();
+    }
+    public void Close_Trade_HUB()
+    {
+        Trade_Hub_Window.SetActive(false);
     }
 }

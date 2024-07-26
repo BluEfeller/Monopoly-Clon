@@ -4,6 +4,9 @@ ScriptsOnlyBuild:
     - Erreignis_Karten
     - GameManager
     - Gemeinschafts_Karten
+    - Heuser_Manager
+    - Hypoteken
+    - Inv_Card_Destroyer
     - Main_Gamepart
     - PLayer_Movement
     - Rotate_Player_Auswahl_Figur
@@ -11,8 +14,16 @@ ScriptsOnlyBuild:
     - StartMenu
     - Start_Manager
     - "Stra\xDFen_Interraktion"
+    - Street_inv
+    - Street_inv_Ineactions
+    - Trade_HUB
     - Watt_for_Field
     - "W\xFCrfeln"
+    Unity.AdaptivePerformance.Editor.dll:
+    - UnityEditor.AdaptivePerformance.Editor.AdaptivePerformanceGeneralSettingsPerBuildTarget
+    Unity.AdaptivePerformance.dll:
+    - UnityEngine.AdaptivePerformance.AdaptivePerformanceGeneralSettings
+    - UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSettings
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -31,8 +42,6 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
-    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -146,14 +155,53 @@ ScriptsOnlyBuild:
     fullTypeName: Spawn_Figure
     methodName: Next_Spawn_Figur_1
   - assembly: Assembly-CSharp
+    fullTypeName: Street_inv_Ineactions
+    methodName: Hypoteke_Abzahlung_Human
+  - assembly: Assembly-CSharp
+    fullTypeName: Street_inv_Ineactions
+    methodName: Hypoteken_Aufname_Human
+  - assembly: Assembly-CSharp
+    fullTypeName: Street_inv_Ineactions
+    methodName: Hypoteken_Aufname_Human
+  - assembly: Assembly-CSharp
+    fullTypeName: Street_inv_Ineactions
+    methodName: Hypoteke_Abzahlung_Human
+  - assembly: Assembly-CSharp
+    fullTypeName: Street_inv_Ineactions
+    methodName: Hypoteke_Abzahlung_Human
+  - assembly: Assembly-CSharp
+    fullTypeName: Street_inv_Ineactions
+    methodName: Hypoteken_Aufname_Human
+  - assembly: Assembly-CSharp
+    fullTypeName: Main_Gamepart
+    methodName: Open_Trade_HUB
+  - assembly: Assembly-CSharp
     fullTypeName: Main_Gamepart
     methodName: Next_Player
+  - assembly: Assembly-CSharp
+    fullTypeName: Street_inv
+    methodName: Next_Site
+  - assembly: Assembly-CSharp
+    fullTypeName: Street_inv
+    methodName: last_Site
+  - assembly: Assembly-CSharp
+    fullTypeName: Main_Gamepart
+    methodName: Close_Inv_Screen
   - assembly: Assembly-CSharp
     fullTypeName: Gemeinschafts_Karten
     methodName: Select_Gemeinschafts
   - assembly: Assembly-CSharp
+    fullTypeName: Main_Gamepart
+    methodName: Close_Trade_HUB
+  - assembly: Assembly-CSharp
     fullTypeName: "W\xFCrfeln"
     methodName: Roll_the_Dice
+  - assembly: Assembly-CSharp
+    fullTypeName: "Stra\xDFen_Interraktion"
+    methodName: Buy_Human
+  - assembly: Assembly-CSharp
+    fullTypeName: Main_Gamepart
+    methodName: Open_Inv_Screen
   sceneClasses:
     Assets/Scenes/Singel Auswahl Menu.unity:
     - Class: 1
@@ -185,41 +233,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 1732}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2670}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2676}
     - Class: 114
-      Script: {instanceID: 3112}
+      Script: {instanceID: 2890}
     - Class: 114
-      Script: {instanceID: 3872}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 4090}
+      Script: {instanceID: 3996}
     - Class: 114
-      Script: {instanceID: 4886}
+      Script: {instanceID: 4226}
     - Class: 114
-      Script: {instanceID: 4948}
+      Script: {instanceID: 5062}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 5126}
     - Class: 114
-      Script: {instanceID: 5476}
+      Script: {instanceID: 5256}
     - Class: 114
-      Script: {instanceID: 5624}
+      Script: {instanceID: 5682}
     - Class: 114
-      Script: {instanceID: 5778}
+      Script: {instanceID: 5998}
     - Class: 114
-      Script: {instanceID: 6100}
+      Script: {instanceID: 6340}
     - Class: 114
-      Script: {instanceID: 6108}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6942}
     - Class: 114
-      Script: {instanceID: 7156}
+      Script: {instanceID: 7432}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -268,49 +316,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 2316}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2356}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2670}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2676}
     - Class: 114
-      Script: {instanceID: 3112}
+      Script: {instanceID: 2890}
     - Class: 114
-      Script: {instanceID: 3872}
+      Script: {instanceID: 3062}
     - Class: 114
-      Script: {instanceID: 4462}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 4948}
+      Script: {instanceID: 3996}
     - Class: 114
-      Script: {instanceID: 5034}
+      Script: {instanceID: 4614}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 4626}
     - Class: 114
-      Script: {instanceID: 5166}
+      Script: {instanceID: 4768}
     - Class: 114
-      Script: {instanceID: 5338}
+      Script: {instanceID: 5126}
     - Class: 114
-      Script: {instanceID: 5624}
+      Script: {instanceID: 5220}
     - Class: 114
-      Script: {instanceID: 5672}
+      Script: {instanceID: 5256}
     - Class: 114
-      Script: {instanceID: 5778}
+      Script: {instanceID: 5360}
     - Class: 114
-      Script: {instanceID: 5814}
+      Script: {instanceID: 5538}
     - Class: 114
-      Script: {instanceID: 6100}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 6108}
+      Script: {instanceID: 5886}
     - Class: 114
-      Script: {instanceID: 6386}
+      Script: {instanceID: 5998}
     - Class: 114
-      Script: {instanceID: 6724}
+      Script: {instanceID: 6036}
     - Class: 114
-      Script: {instanceID: 7156}
+      Script: {instanceID: 6340}
+    - Class: 114
+      Script: {instanceID: 6348}
+    - Class: 114
+      Script: {instanceID: 6384}
+    - Class: 114
+      Script: {instanceID: 6640}
+    - Class: 114
+      Script: {instanceID: 6986}
+    - Class: 114
+      Script: {instanceID: 7304}
+    - Class: 114
+      Script: {instanceID: 7432}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -355,33 +415,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2226}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2670}
     - Class: 114
-      Script: {instanceID: 3112}
+      Script: {instanceID: 2890}
     - Class: 114
-      Script: {instanceID: 3996}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 4104}
+      Script: {instanceID: 4128}
     - Class: 114
-      Script: {instanceID: 4354}
+      Script: {instanceID: 4240}
     - Class: 114
-      Script: {instanceID: 4380}
+      Script: {instanceID: 4500}
     - Class: 114
-      Script: {instanceID: 5070}
+      Script: {instanceID: 4526}
     - Class: 114
-      Script: {instanceID: 5624}
+      Script: {instanceID: 5256}
     - Class: 114
-      Script: {instanceID: 5778}
+      Script: {instanceID: 5998}
     - Class: 114
-      Script: {instanceID: 6100}
+      Script: {instanceID: 6340}
     - Class: 114
-      Script: {instanceID: 7246}
+      Script: {instanceID: 7530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -407,6 +467,18 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveLut
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
@@ -417,6 +489,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveDecals
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -462,6 +540,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveShadowmapResolution
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
@@ -495,12 +579,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerUpMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 49031f0904f24a521ccdec39bbd92cba
-    assemblyName: UnityEngine.TestRunner
-    namespaceName: UnityEngine.TestTools.TestRunner
-    className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -570,15 +648,15 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Unity.VisualScripting.Core
-    namespaceName: Unity.VisualScripting
-    className: CoroutineRunner
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveSorting
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: UnityEngine.TestRunner
-    namespaceName: UnityEngine.TestRunner.Utils
-    className: TestRunCallbackListener
+    assemblyName: Unity.VisualScripting.Core
+    namespaceName: Unity.VisualScripting
+    className: CoroutineRunner
   - hash:
       serializedVersion: 2
       Hash: 6498fc76484598db46c5c1a11bab42fa
@@ -591,6 +669,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveShadowDistance
   - hash:
       serializedVersion: 2
       Hash: be8b55fc8a992741c6269f20cbc719b1
@@ -606,6 +690,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptivePhysics
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnButtonClickMessageListener
@@ -618,9 +708,15 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: UnityEngine.TestRunner
-    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
-    className: TestResultRendererCallback
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveBatching
+  - hash:
+      serializedVersion: 2
+      Hash: 33113241cf49eef203d1cd71ca646f7a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Inv_Card_Destroyer
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -639,6 +735,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveFramerate
   - hash:
       serializedVersion: 2
       Hash: 0b7995e6c59201aa9b4ad6a0aecb4621
@@ -683,6 +785,12 @@ ScriptsOnlyBuild:
     className: UnityOnTransformParentChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveShadowQuality
+  - hash:
+      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -699,12 +807,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSelectMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: UnityEngine.TestRunner
-    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
-    className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
       Hash: 4aeaabfb5368e1c79d66e90575c29ce1
@@ -749,6 +851,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptivePerformanceManager
+  - hash:
+      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
@@ -777,6 +885,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EnvMapAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveViewDistance
   - hash:
       serializedVersion: 2
       Hash: 098f025716fad3521c89a222b6058556
@@ -887,6 +1001,12 @@ ScriptsOnlyBuild:
     className: StartMenu
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveTransparency
+  - hash:
+      serializedVersion: 2
       Hash: f6bf0fc71f5b6dfe19329b1c4df9fee0
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
@@ -905,6 +1025,12 @@ ScriptsOnlyBuild:
     className: TextConsoleSimulator
   - hash:
       serializedVersion: 2
+      Hash: 9f8a55939f4985316db3c9f779f43474
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Street_inv
+  - hash:
+      serializedVersion: 2
       Hash: 26dacff44c1c1bb89901b0b06dafc1de
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
@@ -917,7 +1043,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
-      Hash: bc6442be263d4d45b6dbcf6a31d2eaa5
+      Hash: 28c73dfab9ad90d9eea7aed116c70fa2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Hypoteken
@@ -1061,6 +1187,18 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 69ab1f579ee38bfbcfecaef3ba067b29
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptivePerformanceGeneralSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptivePerformanceManagerSpawner
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1071,6 +1209,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro
     className: TMP_DigitValidator
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveShadowCascade
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1109,6 +1253,12 @@ ScriptsOnlyBuild:
     className: Gemeinschafts_Karten
   - hash:
       serializedVersion: 2
+      Hash: d5ed8edb6022d33052d4727d551eb3b2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Street_inv_Ineactions
+  - hash:
+      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -1127,19 +1277,13 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
-  - hash:
-      serializedVersion: 2
       Hash: 925a889a282ea89c4d9bd41afd22e4c2
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TextMeshSpawner
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: b04504be05b52ce7c8cb83bb01549c75
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: "Stra\xDFen_Interraktion"
@@ -1163,10 +1307,16 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 391ac93ae28449401abef3a927a56773
+      Hash: fa251029317c81aa9c22f1d05400d946
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Main_Gamepart
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveResolution
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1215,6 +1365,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 90e15e23621edf93fbfaa55bf4462a6c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Heuser_Manager
   - hash:
       serializedVersion: 2
       Hash: a03cf6f60c605d858f83449f4b4fc400
@@ -1307,12 +1463,6 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: UnityEngine.TestRunner
-    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
-    className: PlayModeRunnerCallback
-  - hash:
-      serializedVersion: 2
       Hash: 72116d9d5961ce2179add374d980ed5c
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1355,12 +1505,6 @@ ScriptsOnlyBuild:
     className: UnityOnScrollRectValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: UnityEngine.TestRunner
-    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
-    className: RemoteTestResultSender
-  - hash:
-      serializedVersion: 2
       Hash: c92e03126f82226c2e517b0c562a3094
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -1371,6 +1515,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSubmitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveLayerCulling
   - hash:
       serializedVersion: 2
       Hash: 21458b64fdf3b1c35574c2a0e82b859d
@@ -1389,6 +1539,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: f210763793d397e763b723637cdf1a7c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Trade_HUB
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1410,9 +1566,33 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveLOD
+  - hash:
+      serializedVersion: 2
+      Hash: 9f19b7cfdb880c12fe7a1ed209e5ed78
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: IAdaptivePerformanceSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptiveMSAA
+  - hash:
+      serializedVersion: 2
+      Hash: c2552273656d3e2189c71046dbb7e62a
+    assemblyName: Unity.AdaptivePerformance
+    namespaceName: UnityEngine.AdaptivePerformance
+    className: AdaptivePerformanceManagerSettings
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1443,12 +1623,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateMachine
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Hauser_Bau
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b

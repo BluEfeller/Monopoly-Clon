@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public static int Erreignis_Kartenzahl;
     public static GameObject[] Erreignis_Karten = new GameObject[14];
     public static string[] Player_Figure_Namen = { "Player_1", "Player_2", "Player_3", "Player_4", "Player_1_Dev", "Player_2_Dev", "Player_3_Dev", "Player_4_Dev" };
-    public static int[] Player_Arten = { 1, 1, 1, 1 };
+    public static int[] Player_Arten = { 2, 2, 2, 2 };
     public static int[] Player_Positionen = { 0, 0, 0, 0 };
     public static int[] Straﬂen_Kaufpreise = new int[40];
     public static GameObject[] Straﬂen_Karten = new GameObject[40];
@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public static int[] Freie_Straﬂen = new int[40];
     public static GameObject[,] Player_Straﬂen_Besitz_Anzeige = new GameObject[4, 40];
     public static int[] Haus_Stufe = new int[40];
+    public static int[] Haus_Kaufpreis = new int[40];
     public static int[] Bahnhofs_Besitz = new int[4];
     public static int[,] Haus_Stufen_Mietpreise = new int[6,40];
     public static int[] Player_Money = { 1000, 1000, 1000, 1000 };

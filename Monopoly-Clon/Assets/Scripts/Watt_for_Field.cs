@@ -55,6 +55,9 @@ public class Watt_for_Field : MonoBehaviour
                     GameObject.Find("Main_Game").GetComponent<Main_Gamepart>().Wait_Next();
                 }
                 break;
+            case 20:
+                    GameObject.Find("Main_Game").GetComponent<Main_Gamepart>().Wait_Next();
+                break;
             default:
                 GameManager.Straﬂen_Karten[GameManager.Player_Positionen[GameManager.Next]].SetActive(true);
                 GameObject.Find("Straﬂen_In").GetComponent<Straﬂen_Interraktion>().Kaufpaar();

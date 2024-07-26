@@ -11,11 +11,12 @@ public class Inv_Card_Destroyer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Time += 1;
         if (Time%interval == 0)
         {
             if(GameManager.Current_Sceen > Destroy_by_Sceen || GameManager.Current_Sceen < Destroy_by_Sceen)
             {
-                Destroy(this);
+                Destroy(gameObject);
             }
         }
     }
